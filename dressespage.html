@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dresses</title>
+    <link rel="stylesheet" href="itemscomm.css">
+</head>
+<body>
+    <div class="main">
+        <h2>Dresses</h2>
+        <select id="select">
+            <option>   ---- filter ----   </option>
+            <option value="high">High-to-Low</option>
+            <option value="low">Low-to-High</option>
+        </select>
+        <div class="productitems">
+
+        </div>
+    </div>
+</body>
+</html>
+<script src="itemscomm.js"></script>
+<script>
+    var dataArr=[
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130010810001_053_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Amanda Uprichard Sequin Cutout Mini Dress",
+        price: 246.00,
+        productId:1
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130099510208_082_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Faithfull Babydoll Midi Dress",
+        price:219.00,
+        productId:2
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130916210042_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"The Marais Dress",
+        price:180.00,
+        productId:3
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130638280199_010_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Farm x Anthropologie Crochet Maxi Dresses",
+        price:248.00,
+        productId:4
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130930420004_000_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Ronny Kobo One-Shoulder Tropical Midi Dress",
+        price:248.00,
+        productId:5
+
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130646420009_014_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"The Somerset Maxi Dress",
+        price:168.00,
+        productId:6
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130652010047_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"V-Neck Wrap Mini Dress",
+        price:148.00,
+        productId:7
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130916210078_049_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Emily Halter Mini Dress",
+        price:140.00,
+        productId:8
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130464030191_095_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Hutch High-Low Dress",
+        price:198.00,
+        productId:9
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130370060073_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Halter Side-Slit Maxi Dress",
+        price:170.00,
+        productId:10
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130464030187_038_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Hutch Ditsy-Printed Mini Dress",
+        price:170.00,
+        productId:11
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130226850016_060_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Blue Tassel Ruffled Waistless Mini Dress",
+        price:148.00,
+        productId:12
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130370060075_070_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Silk Colorblocked Maxi Dress",
+        price:248.00,
+        productId:13
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130024090110_050_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Corey Lynn Calter Balbina Strapless Mini Dress",
+        price:198.00,
+        productId:14
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130607630008_010_b15?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Maeve Strapless Lace Mini Dress",
+        price:190.00,
+        productId:15
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130456940035_049_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Verb by Pallavi Singhee Cut-Out Midi Dress",
+        price:248.00,
+        productId:16
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130464030186_029_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Hutch Floral Wrap Mini Skirt",
+        price:180.00,
+        productId:17
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130916210071_050_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"One-Shoulder Slik Midi Dress",
+        price:260.00,
+        productId:18
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130652010045_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Maeve Open-Back Wrap Midi Dress",
+        price:148.00,
+        productId:19
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130089450008_066_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Pilcro Buttondown SHirt Dress",
+        price:140.00,
+        productId:20
+    },
+    ];
+    display(dataArr)
+</script>

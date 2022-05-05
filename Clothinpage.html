@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty & Wellness</title>
+    <link rel="stylesheet" href="itemscomm.css">
+</head>
+
+<body>
+    <div class="main">
+        <h2>Clothing</h2>
+        <select id="select">
+            <option> ---- filter ---- </option>
+            <option value="high">High-to-Low</option>
+            <option value="low">Low-to-High</option>
+        </select>
+        <div class="productitems">
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="itemscomm.js"></script>
+<script >
+    var dataArr = [
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/66667379_042_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "FREECITY Super-Vintage Sweat Pants",
+            price: 235.00,
+            productId: 37
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/66667015_066_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "FREECITY Super-Vintage Long-Sleave Tee",
+            price: 215.00,
+            productId: 38
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/66667379_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "FREECITY Super-Vintage Sweat Pants",
+            price: 235.00,
+            productId: 23
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/4112929840003_004_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Favorite Daughter Favorite Aunt Tee",
+            price: 48.00,
+            productId: 39
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/64892649_066_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "FREECITY Sweatpants",
+            price: 148.00,
+            productId: 40
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/A4112929840003_010_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Favorite Daughter Favorite Sister Tee",
+            price: 48.00,
+            productId: 41
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/4111260840019_072_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Clare V. La Banane Tie-Dye Sweatshirt",
+            price: 155,
+            productId: 42
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/4112260840030_012_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Clare V. La Banane Petite Graphic Tee",
+            price: 99.00,
+            productId: 43
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/68742410_272_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Sundry Rugby T-Shirt Dress",
+            price: 158.00,
+            productId:44
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/4112261180007_010_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "MOTHER Lil Goodie Graphic Tee",
+            price: 95.00,
+            productId: 45
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/66125931_041_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "MOTHER Relaxed Funnel-Neck Sweatshirt",
+            price: 198.00,
+            productId: 46
+        },
+        {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130010810001_053_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Amanda Uprichard Sequin Cutout Mini Dress",
+        price: 246.00,
+        productId:47
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130099510208_082_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Faithfull Babydoll Midi Dress",
+        price:219.00,
+        productId:48
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130916210042_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"The Marais Dress",
+        price:180.00,
+        productId:49
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130638280199_010_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Farm x Anthropologie Crochet Maxi Dresses",
+        price:248.00,
+        productId:50
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130930420004_000_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"Ronny Kobo One-Shoulder Tropical Midi Dress",
+        price:248.00,
+        productId:51
+
+    },
+    {
+        img:"https://images.urbndata.com/is/image/Anthropologie/4130646420009_014_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+        name:"The Somerset Maxi Dress",
+        price:168.00,
+        productId:52
+    }
+    ]
+  display(dataArr)
+</script>

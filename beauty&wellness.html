@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty & Wellness</title>
+    <link rel="stylesheet" href="itemscomm.css">
+</head>
+
+<body>
+    <div class="main">
+        <h2>Beauty & Wellness</h2>
+        <select id="select">
+            <option> ---- filter ---- </option>
+            <option value="high">High-to-Low</option>
+            <option value="low">Low-to-High</option>
+        </select>
+        <div class="productitems">
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="itemscomm.js"></script>
+<script >
+    var dataArr = [
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/68446657_000_b3?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Wrapped in Florals Fragrance Sampler",
+            price: 20.00,
+            productId: 21
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/43673730_023_b10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Tocca Mini Hand Cream",
+            price: 10.00,
+            productId: 22
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/40334666_070_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Slip Silk Pillowcase",
+            price: 89.00,
+            productId: 23
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/57802431_004_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Nodpod Weighted Eye Mask",
+            price: 34.00,
+            productId: 24
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/42324350_043_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Jao Brand Refresher Mini Hand Sanitizer",
+            price: 10.00,
+            productId: 25
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/48436679_025_b10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Nostalgia Eau De Parfum",
+            price: "$23",
+            productId: 26
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/61513149_072_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Musee Shower Steamer",
+            price: 24,
+            productId: 27
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/59063339_010_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Supergoop! SPF 50 Play Everyday Lotion, 18 oz.",
+            price: 58.00,
+            productId: 28
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/69267904_070_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Vilhelm Parfumerie Eau De Parfum",
+            price: 245.00,
+            productId: 29
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/59346866_066_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Unbound Puff Vibrator",
+            price: 48.00,
+            productId: 30
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/47547575_009_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Slip Silk Large Scrunchie Set",
+            price: 39.00,
+            productId: 31
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/67383901_066_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Bastide Potpourri Crystals",
+            price: 80,
+            productId: 32
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/69267151_010_b10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Juliette Has A Gun Travel Spray",
+            price: 28.00,
+            productId: 33
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/70550777_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Soleil Toujours Mineral Ally Eye Glow & Illuminator",
+            price: 68.00,
+            productId: 34
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/69209286_272_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Kinfield Daily Dew SPF 35 Water-Resistant Sunscreen",
+            price: 24.00,
+            productId: 35
+        },
+        {
+            img: "https://images.urbndata.com/is/image/Anthropologie/69234474_029_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+            name: "Grown Alchemist Body Cleanser",
+            price: 44.00,
+            productId: 36
+        }
+    ]
+  display(dataArr)
+</script>
