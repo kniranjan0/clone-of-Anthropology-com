@@ -5,12 +5,15 @@ function display(dataArr){
     var divgrid=document.createElement("div");
 
     var img=document.createElement("img");
+    img.setAttribute("class","image")
     img.src=ele.img;
 
     var name=document.createElement("p");
+    name.setAttribute("class","p")
     name.innerHTML=ele.name;
 
     var price=document.createElement("p");
+    price.setAttribute("class","p")
     price.innerHTML="$"+ ele.price;
 
     var btn=document.createElement("button");
