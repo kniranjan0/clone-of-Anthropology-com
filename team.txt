@@ -1,8 +1,7 @@
 # coding-project-unit2-1
 
-Niranjan --->  Home page, Product page, Linking 
-Bhanu     --->  Nav bar, Footer, Cart
-Tanya      --->  Sign up, Login, Payment
+Niranjan --->  Home page, Product page, Sign up, Login, Payment page
+Bhanu    --->  Nav bar, Footer, Cart page , Linking 
 
 Note :- Please create separate branch for your changes
 

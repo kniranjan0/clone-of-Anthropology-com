@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        h1{
+           
+            font-size: 36px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+    }
+    h1+div{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        width: 300px;
+        /* border: black solid 1px; */
+        margin: auto;
+        padding: 30px;
+    }
+    .h3{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    button{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        
+    }
+    #navbar{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1%;
+        box-shadow: 2px 2px 5px 5px rgb(235, 235, 235);
+    }
+    a{
+        text-decoration: none;
+        color:white;
+        background-color: rgb(63, 63, 163);
+    }
+    input{
+        width: 90%;
+        padding: 10px;
+    }
+    #submit{
+        margin:auto;
+        width: 100%; 
+        margin-top: 20px;
+        padding: 5px  20px 5px 20px;
+        background-color:rgb(214, 201, 201);
+        font-weight: 900;
+        color:blue;
+        border: 0px;
+        border-radius: 2px;
+        cursor: pointer;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-color: lightslategray;
+    }
+    .box{
+        background-color: white;
+    }
+    </style>
+</head>
+<body>
+    
+    <h1>Sign Up</h1>
+        <div class="box">
+            <h3 class="h3">Full Name</h3>
+            <form id="form">
+                <input id="name" type="text" placeholder="Enter your full name">
+                <h3 class="h3">Email</h3>
+                <input id="email" type="email" placeholder="Enter email">
+                <h3 class="h3">Password</h3>
+                <input id="password" type="password" placeholder="Enter password">
+                <input type="submit" value="Sign Up" id="submit">
+            </form>
+  
+        </div>
+</body>
+</html>
+
+<script>
+   document.querySelector("form").addEventListener("submit",signup)
+   function signup()
+   {
+       event.preventDefault()
+
+       var objInfo ={
+           userName:form.name.value,
+           userEmail:form.email.value,
+           userPassword:form.password.value,
+       }
+       var userData = JSON.parse(localStorage.getItem("users")) || [];
+       userData.push(objInfo)
+       localStorage.setItem("users",JSON.stringify(userData))
+       document.addEventListener("submit",alt)
+       document.querySelector("form").reset();
+       window.location.href="loginpage.html"
+    }
+    
+    function alt(){
+       alert("account created successfully")
+   }
+</script>
