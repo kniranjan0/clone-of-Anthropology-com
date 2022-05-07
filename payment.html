@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 100%;
+        
+        }
+        body{
+            background-color: lightslategray;
+        }
+        .box{
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            margin: auto;
+            width: 30%;
+            border-radius: 9px;
+        }
+        .h2{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin-top: 30px;
+        }
+        .p{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        form{
+            text-align: center;
+        }
+        #submit{
+            background-color:orangered;
+            border: 0px;
+            cursor: pointer;
+            color: white;
+            font-weight: 900px;
+            border-radius: 4px;
+            padding: 4px 7px 4px 7px;
+            margin-bottom: 25px;
+
+        }
+        #cvv{
+            width: 10%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <form >
+                <h2 class="h2">Credit & Debit Cards</h2> <hr>
+                <p class="p">Card Number</p>
+                <input type="number" placeholder="xxxxxxxxxxxxxxxx">
+                <p class="p">Expiry</p>
+                <p class="p">Date (MM/YY)</p>
+                <input type="month">
+                <p class="p">CVV</p>
+                <input type="password" name="" id="cvv">
+                <p class="p">Your card details will be saved securely for future transactions, based on the industry standards</p>
+                <input type="submit" name="" id="submit" value="MAKE PAYMENT">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",myfun)
+    function myfun(){
+        console.log("click")
+        event.preventDefault()
+        window.location.href="paymentcompletionpage.html"
+    }
+</script>
