@@ -66,11 +66,12 @@
 .dropdown-content3{
     display: none;
     position: absolute;
+    background-color:whitesmoke;
     
     min-width: 160px;
-    background-color:whitesmoke;
+  
     height: auto;
-    width: 1500px;
+  
     top: 40px; 
     left: -210px;
     
@@ -192,10 +193,7 @@
    
     letter-spacing: .06rem;
 }
-.dropdown-content3 .dropmenuenew{
-    
-    width: 250px;
-}
+
 
 
         
