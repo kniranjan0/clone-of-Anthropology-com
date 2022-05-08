@@ -64,21 +64,26 @@
 </html>
 
 <script>
-    var data=JSON.parse(localStorage.getItem("userCredets")) ||[]
-    document.querySelector("form").addEventListener("submit",logindata)
+    var data=JSON.parse(localStorage.getItem("users")) ||[]
+    document.querySelector("#btn").addEventListener("click",logindata)
     function logindata(){
         event.preventDefault();
+        console.log("click")
         var userEmail=document.querySelector("#email").value;
         var userPassword=form.password.value;
-        
+        var isUser = false;
         data.forEach(function(ele){
             if(userEmail==ele.userEmail && userPassword==ele.userPassword){
-                alert("log in successfully");
-            }
-            else{
-                alert("Incorrect password");
-                location.reload();
+               isUser = true;
+                return ;
             }
         })
+
+        if(isUser)  {
+            alert("Login successfully");
+        }
+        else {
+            alert("Incorrect password");
+        }
     }
 </script>
