@@ -48,13 +48,15 @@ function AddtoCart(ele){
     alert("Add cart items successfully");
 }
 
-document.querySelector("#select").addEventListener("change",function(){
+document.querySelector("#filter-select").addEventListener("change",function(){
     Shortfun()
 })
 
 function Shortfun(){
-    var str=document.querySelector("select").value;
+    var str=document.querySelector("#filter-select").value;
+    console.log(str);
     var h=dataArr || []
+    console.log(dataArr);
     if(str == "high"){
         h.sort(function(a, b) {
             return b.price - a.price

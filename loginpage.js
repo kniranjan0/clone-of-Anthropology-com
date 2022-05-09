@@ -1,26 +1,22 @@
 
-    var data=JSON.parse(localStorage.getItem("users")) ||[]
-    document.querySelector("form").addEventListener("submit",logindata)
+    var data=JSON.parse(localStorage.getItem("users")) ||[];
+    document.querySelector("#btn12").addEventListener("click",logindata)
     function logindata(){
         event.preventDefault();
-        var Email=document.querySelector("#email").value;
-        var Password=form.password.value;
-       
-       var x =  data.filter(function(ele){
-            if(Email==ele.userEmail && Password==ele.userPassword){
-            
-             return ele.userEmail+ele.userPassword
-            
+        var userEmail=document.querySelector("#email").value;
+        var userPassword=form.password.value;
+        var isUser = false;
+        data.forEach(function(ele){
+            if(userEmail==ele.userEmail && userPassword==ele.userPassword){
+               isUser = true;
+                return window.location.href="index.html";
             }
-           
-            
         })
-        console.log(x)
-        if(Email== x[0].userEmail && Password==x[0].userPassword){
-            alert("Login successfull")
-            window.location.href="index.html"
+        if(isUser)  {
+            alert("Login successfull");
         }
-        else{
-            alert("User Not Exist")
+        else {
+            alert("User Not Exist");
+            location.reload()
         }
     }

@@ -16,7 +16,6 @@
 }
 
 .products {
-
     margin: auto;
     width: 70%;
     display: grid;
@@ -25,17 +24,17 @@
     gap: 19px;
 }
 
-/* .products>div {
+ /* .products>div {
     position: relative;
 }
 
 .productsrightside>div {
     position: relative;
-} */
+} 
 
-/* .part1last>div {
+ .part1last>div {
     position: relative;
-} */
+}  */
 
 .img1 {
     grid-column-start: 1;

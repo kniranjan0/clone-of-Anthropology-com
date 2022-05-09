@@ -5,6 +5,7 @@
         console.log("click")
         event.preventDefault()
         window.location.href="paymentcompletionpage.html"
+        localStorage.setItem("cartitems", JSON.stringify([]))
     }
 
 
