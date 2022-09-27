@@ -9,6 +9,21 @@
 - javascript
 - js dom manipulation
 
+## Pages & Features
+- Home Page
+- Product Page
+- Authentication Flow
+- Payment Flow
+- Listing of Product
+- SignIn And SignUp
+
+## Tech Stack
+-  `JS DOM MANIPULATION`
+-  `JAVA SCRIPT`
+-  `HTML`
+-  `CSS`
+
+
 ### TEAM MEMBERS
 
 _we really enjoyed this whole part of clonning and have given our best efforts to bring the BEST thing as POSSIBLE._
